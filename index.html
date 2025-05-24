@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TecnoAsistencia - Servicios y Ventas Electrónicas</title>
   <style>
-    /* Fuentes y reset básico */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
 
     * {
@@ -14,32 +13,29 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background: #121212; /* fondo oscuro elegante */
+      background: #121212;
       color: #eee;
       line-height: 1.6;
     }
 
-    /* Animación flotante */
     @keyframes float {
       0%, 100% {
         transform: translateY(0);
         text-shadow:
-          0 0 6px #00f,
-          0 0 12px #00f,
-          0 0 18px #0ff,
-          0 0 24px #0ff,
-          0 0 30px #0ff,
-          0 0 36px #0ff;
+          0 0 5px #002a66,
+          0 0 10px #003d99,
+          0 0 20px #0055cc,
+          0 0 30px #0066ff,
+          0 0 40px #007fff;
       }
       50% {
         transform: translateY(-8px);
         text-shadow:
-          0 0 10px #00f,
-          0 0 18px #00f,
-          0 0 28px #0ff,
-          0 0 38px #0ff,
-          0 0 48px #0ff,
-          0 0 58px #0ff;
+          0 0 10px #002a66,
+          0 0 20px #003d99,
+          0 0 30px #0055cc,
+          0 0 40px #0066ff,
+          0 0 50px #007fff;
       }
     }
 
@@ -106,17 +102,17 @@
       box-shadow: 0 0 15px rgba(0,0,0,0.8);
     }
 
-    /* Subtítulos flotantes azul neón oscuro y profesional */
     h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #0077ff;
+      color: #007fff;
       text-shadow:
-        0 0 4px #003366,
-        0 0 8px #0055cc,
-        0 0 12px #0066ff,
-        0 0 18px #0066ff;
+        0 0 5px #002a66,
+        0 0 10px #003d99,
+        0 0 20px #0055cc,
+        0 0 30px #0066ff,
+        0 0 40px #007fff;
       animation: float 3s ease-in-out infinite;
     }
 
@@ -136,7 +132,6 @@
       font-size: 1rem;
     }
 
-    /* Formulario */
     form label {
       display: block;
       margin-bottom: 0.3rem;
@@ -179,15 +174,13 @@
       outline: none;
     }
 
-    /* Footer */
     footer {
       background: #023e8a;
       text-align: center;
       color: #90e0ef;
       padding: 1rem;
       font-size: 0.9rem;
-      text-shadow:
-        0 0 5px #90e0ef;
+      text-shadow: 0 0 5px #90e0ef;
     }
 
     footer a {
@@ -201,7 +194,6 @@
       text-decoration: underline;
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
@@ -234,9 +226,9 @@
   <a href="#bienvenida">Bienvenida</a>
   <a href="#servicios">Servicios Técnicos</a>
   <a href="#ventas">Ventas Informáticas</a>
-  <a href="#contacto">Contacto</a>
   <a href="#faq">Preguntas Frecuentes</a>
   <a href="#testimonios">Testimonios</a>
+  <a href="#contacto">Contacto</a>
 </nav>
 
 <section id="bienvenida">
@@ -276,26 +268,6 @@
   <p>Para comprar, escríbenos en la sección de contacto o visita nuestra tienda física.</p>
 </section>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>Teléfono: +595 123 456 789</p>
-  <p>Email: contacto@tecnoasistencia.com.py</p>
-  <p>Dirección: Av. Principal 123, Asunción, Paraguay</p>
-
-  <form>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required />
-
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-
 <section id="faq">
   <h2>Preguntas Frecuentes</h2>
   <h3>¿Cuánto tiempo tarda una reparación?</h3>
@@ -314,11 +286,31 @@
   </blockquote>
 </section>
 
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Teléfono: +595 123 456 789</p>
+  <p>Email: contacto@tecnoasistencia.com.py</p>
+  <p>Dirección: Av. Principal 123, Asunción, Paraguay</p>
+
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
 <footer>
-  <p>© 2025 TecnoAsistencia | contacto@tecnoasistencia.com.py | +595 123 456 789</p>
+  <p>&copy; 2025 TecnoAsistencia. Todos los derechos reservados.</p>
   <p>
-    <a href="https://www.facebook.com/Davidverdun777" target="_blank" rel="noopener noreferrer">Facebook</a> |
-    <a href="https://www.instagram.com/davidverdun7/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="https://facebook.com/tecnoasistencia" target="_blank" rel="noopener noreferrer">Facebook</a> |
+    <a href="https://instagram.com/tecnoasistencia" target="_blank" rel="noopener noreferrer">Instagram</a>
   </p>
 </footer>
 
