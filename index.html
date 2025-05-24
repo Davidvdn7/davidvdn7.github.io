@@ -19,25 +19,57 @@
       line-height: 1.6;
     }
 
+    /* Animación flotante */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+        text-shadow:
+          0 0 6px #00f,
+          0 0 12px #00f,
+          0 0 18px #0ff,
+          0 0 24px #0ff,
+          0 0 30px #0ff,
+          0 0 36px #0ff;
+      }
+      50% {
+        transform: translateY(-8px);
+        text-shadow:
+          0 0 10px #00f,
+          0 0 18px #00f,
+          0 0 28px #0ff,
+          0 0 38px #0ff,
+          0 0 48px #0ff,
+          0 0 58px #0ff;
+      }
+    }
+
     header {
       background: linear-gradient(90deg, #00b4d8, #0077b6);
       padding: 2rem 1rem;
       text-align: center;
       color: white;
       box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+      animation: float 3s ease-in-out infinite;
+      font-family: 'Montserrat', sans-serif;
     }
 
     header h1 {
-      font-family: 'Montserrat', sans-serif;
       font-size: 2.8rem;
       margin-bottom: 0.2rem;
       letter-spacing: 2px;
+      text-shadow:
+        0 0 8px #0ff,
+        0 0 15px #0ff,
+        0 0 20px #0ff,
+        0 0 25px #00bcd4;
     }
 
     header p {
       font-size: 1.2rem;
       font-weight: 500;
       opacity: 0.85;
+      text-shadow:
+        0 0 6px #0ff;
     }
 
     nav {
@@ -74,11 +106,18 @@
       box-shadow: 0 0 15px rgba(0,0,0,0.8);
     }
 
+    /* Subtítulos flotantes azul neón */
     h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #00b4d8;
+      color: #00ffff;
+      text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #00ffff;
+      animation: float 3s ease-in-out infinite;
     }
 
     ul {
@@ -147,6 +186,8 @@
       color: #90e0ef;
       padding: 1rem;
       font-size: 0.9rem;
+      text-shadow:
+        0 0 5px #90e0ef;
     }
 
     footer a {
@@ -237,8 +278,8 @@
 
 <section id="contacto">
   <h2>Contacto</h2>
-  <p>Teléfono: +595 981283157</p>
-  <p>Email: davidvdn10@gmail.com</p>
+  <p>Teléfono: +595 123 456 789</p>
+  <p>Email: contacto@tecnoasistencia.com.py</p>
   <p>Dirección: Av. Principal 123, Asunción, Paraguay</p>
 
   <form>
@@ -257,33 +298,25 @@
 
 <section id="faq">
   <h2>Preguntas Frecuentes</h2>
-  <h3>¿Ofrecen garantía en reparaciones?</h3>
-  <p>Sí, todas nuestras reparaciones cuentan con garantía de 3 meses.</p>
-
-  <h3>¿Cómo hago para solicitar soporte remoto?</h3>
-  <p>Solo debes contactarnos por teléfono o correo y coordinamos una sesión remota.</p>
-
-  <h3>¿Aceptan pagos en efectivo y tarjetas?</h3>
-  <p>Aceptamos ambos métodos de pago para tu comodidad.</p>
+  <h3>¿Cuánto tiempo tarda una reparación?</h3>
+  <p>Dependiendo del problema, generalmente entre 24 y 72 horas.</p>
+  <h3>¿Ofrecen garantía en los servicios?</h3>
+  <p>Sí, todos nuestros servicios cuentan con garantía de 3 meses.</p>
 </section>
 
 <section id="testimonios">
   <h2>Testimonios</h2>
   <blockquote>
-    "Excelente servicio y atención personalizada. Repararon mi laptop en tiempo récord." - Juan P.
+    <p>"Excelente servicio, rápido y confiable. Recomiendo 100%." - Juan P.</p>
   </blockquote>
   <blockquote>
-    "Compré una computadora y funciona perfecto. Muy recomendados." - María S.
-  </blockquote>
-  <blockquote>
-    "Siempre me ayudan con el soporte técnico, super confiables." - Carlos M.
+    <p>"Compré una laptop y el soporte postventa fue impecable." - María G.</p>
   </blockquote>
 </section>
 
 <footer>
-  <p>© 2025 TecnoAsistencia | davidvdn10@gmail.com | +595 981283157</p>
+  <p>© 2025 TecnoAsistencia | contacto@tecnoasistencia.com.py | +595 123 456 789</p>
   <p>
-    Síguenos en
     <a href="https://www.facebook.com/Davidverdun777" target="_blank" rel="noopener noreferrer">Facebook</a> |
     <a href="https://www.instagram.com/davidverdun7/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a>
   </p>
