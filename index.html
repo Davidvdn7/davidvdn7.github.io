@@ -1,259 +1,292 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TecnoAsistencia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TecnoAsistencia - Servicios y Ventas Electrónicas</title>
   <style>
- <style>
-  /* Fuentes y reset básico */
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+    /* Fuentes y reset básico */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
 
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-  }
-
-  body {
-    font-family: 'Roboto', sans-serif;
-    background: #121212; /* fondo oscuro elegante */
-    color: #eee;
-    line-height: 1.6;
-  }
-
-  header {
-    background: linear-gradient(90deg, #00b4d8, #0077b6);
-    padding: 2rem 1rem;
-    text-align: center;
-    color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
-  }
-
-  header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.8rem;
-    margin-bottom: 0.2rem;
-    letter-spacing: 2px;
-  }
-
-  header p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    opacity: 0.85;
-  }
-
-  nav {
-    background: #023e8a;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem 0;
-  }
-
-  nav a {
-    color: #90e0ef;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 0.4rem 0.6rem;
-    border-radius: 6px;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-
-  nav a:hover,
-  nav a:focus {
-    background: #90e0ef;
-    color: #023e8a;
-    outline: none;
-  }
-
-  section {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 2rem 1rem;
-    background: #1e1e1e;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.8);
-  }
-
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #00b4d8;
-  }
-
-  ul {
-    list-style: none;
-    padding-left: 1rem;
-  }
-
-  ul li::before {
-    content: '✓';
-    color: #90e0ef;
-    margin-right: 8px;
-  }
-
-  p {
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-
-  /* Formulario */
-  form label {
-    display: block;
-    margin-bottom: 0.3rem;
-    font-weight: 600;
-  }
-
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 0.7rem;
-    border-radius: 6px;
-    border: none;
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    font-family: inherit;
-  }
-
-  input[type="text"]:focus,
-  textarea:focus {
-    outline: 2px solid #00b4d8;
-  }
-
-  button {
-    background-color: #00b4d8;
-    color: white;
-    border: none;
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 700;
-    transition: background-color 0.3s ease;
-  }
-
-  button:hover,
-  button:focus {
-    background-color: #0077b6;
-    outline: none;
-  }
-
-  /* Footer */
-  footer {
-    background: #023e8a;
-    text-align: center;
-    color: #90e0ef;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-
-  footer a {
-    color: #90e0ef;
-    margin: 0 0.5rem;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  footer a:hover {
-    text-decoration: underline;
-  }
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-      gap: 1rem;
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
     }
 
-    section {
-      margin: 1rem;
-      padding: 1.5rem 1rem;
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #121212; /* fondo oscuro elegante */
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00b4d8, #0077b6);
+      padding: 2rem 1rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
     }
 
     header h1 {
-      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.8rem;
+      margin-bottom: 0.2rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+
+    nav {
+      background: #023e8a;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #90e0ef;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: #90e0ef;
+      color: #023e8a;
+      outline: none;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem 1rem;
+      background: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00b4d8;
     }
-  }
-</style>
 
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    ul li::before {
+      content: '✓';
+      color: #90e0ef;
+      margin-right: 8px;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    /* Formulario */
+    form label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 6px;
+      border: none;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      outline: 2px solid #00b4d8;
+    }
+
+    button {
+      background-color: #00b4d8;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover,
+    button:focus {
+      background-color: #0077b6;
+      outline: none;
+    }
+
+    /* Footer */
+    footer {
+      background: #023e8a;
+      text-align: center;
+      color: #90e0ef;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #90e0ef;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      section {
+        margin: 1rem;
+        padding: 1.5rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>TecnoAsistencia</h1>
-  <p>Servicios técnicos y ventas de productos informáticos</p>
+  <p>Servicios Técnicos y Ventas Electrónicas para tu tecnología</p>
 </header>
 
 <nav>
-  <a href="#servicios">Servicios</a>
-  <a href="#ventas">Ventas</a>
-  <a href="#faq">Preguntas</a>
-  <a href="#testimonios">Testimonios</a>
+  <a href="#bienvenida">Bienvenida</a>
+  <a href="#servicios">Servicios Técnicos</a>
+  <a href="#ventas">Ventas Informáticas</a>
   <a href="#contacto">Contacto</a>
+  <a href="#faq">Preguntas Frecuentes</a>
+  <a href="#testimonios">Testimonios</a>
 </nav>
 
 <section id="bienvenida">
-  <h2>Bienvenido</h2>
-  <p>En TecnoAsistencia ofrecemos soluciones técnicas para tus equipos y los mejores productos informáticos del mercado.</p>
+  <h2>Bienvenida</h2>
+  <p>En TecnoAsistencia, te ofrecemos soluciones integrales para tus dispositivos electrónicos, desde reparaciones hasta la venta de productos tecnológicos de alta calidad.</p>
 </section>
 
 <section id="servicios">
   <h2>Servicios Técnicos</h2>
   <ul>
-    <li>Reparación de computadoras</li>
-    <li>Soporte técnico a domicilio y remoto</li>
-    <li>Instalación de software y sistemas</li>
+    <li>Reparación de computadoras y laptops</li>
+    <li>Soporte técnico remoto y presencial</li>
+    <li>Instalación y actualización de software</li>
+    <li>Mantenimiento preventivo y limpieza de hardware</li>
   </ul>
-  <p>¡Confía en nosotros para mantener tu equipo funcionando como nuevo!</p>
+  <p>Contratando nuestros servicios, disfrutarás de atención personalizada, rapidez y garantía de calidad.</p>
+  <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=60" alt="Reparación de computadoras" style="width:100%; border-radius: 8px; margin-top: 1rem;" />
 </section>
 
 <section id="ventas">
   <h2>Ventas Informáticas</h2>
-  <ul>
-    <li><strong>Laptop HP 15"</strong> - Gs. 2.500.000</li>
-    <li><strong>Mouse gamer Redragon</strong> - Gs. 150.000</li>
-    <li><strong>Monitor LG 24"</strong> - Gs. 1.100.000</li>
-  </ul>
-  <p>Para comprar, contáctanos directamente.</p>
-</section>
-
-<section id="faq">
-  <h2>Preguntas Frecuentes</h2>
-  <p><strong>¿Hacen servicio a domicilio?</strong> Sí, en Asunción y Gran Asunción.</p>
-  <p><strong>¿Puedo pagar con tarjeta?</strong> Sí, aceptamos tarjetas y pagos vía QR.</p>
-</section>
-
-<section id="testimonios">
-  <h2>Testimonios</h2>
-  <p>"Excelente servicio, me repararon la PC en 1 día." – <em>Carlos M.</em></p>
-  <p>"Muy confiables. Compré un monitor y llegó todo perfecto." – <em>Lucía R.</em></p>
+  <article>
+    <h3>Computadora de Escritorio X500</h3>
+    <p>Procesador Intel i7, 16GB RAM, SSD 512GB, tarjeta gráfica NVIDIA GTX 1660.</p>
+    <p><strong>Precio:</strong> $900 USD</p>
+  </article>
+  <article>
+    <h3>Laptop Ultrabook Z3</h3>
+    <p>Procesador AMD Ryzen 7, 16GB RAM, SSD 1TB, pantalla Full HD.</p>
+    <p><strong>Precio:</strong> $1200 USD</p>
+  </article>
+  <article>
+    <h3>Periféricos y Accesorios</h3>
+    <p>Teclados mecánicos, mouse ergonómicos, monitores, y más.</p>
+    <p><strong>Consulta precios y disponibilidad</strong></p>
+  </article>
+  <p>Para comprar, escríbenos en la sección de contacto o visita nuestra tienda física.</p>
 </section>
 
 <section id="contacto">
   <h2>Contacto</h2>
-  <p>📞 Teléfono: +595 981 123456</p>
-  <p>📧 Email: contacto@tecnoasistencia.com</p>
+  <p>Teléfono: +595 123 456 789</p>
+  <p>Email: contacto@tecnoasistencia.com.py</p>
+  <p>Dirección: Av. Principal 123, Asunción, Paraguay</p>
+
   <form>
-    <label>Tu nombre:</label><br>
-    <input type="text" name="nombre"><br>
-    <label>Tu mensaje:</label><br>
-    <textarea name="mensaje" rows="4"></textarea><br>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
     <button type="submit">Enviar</button>
   </form>
 </section>
 
+<section id="faq">
+  <h2>Preguntas Frecuentes</h2>
+  <h3>¿Ofrecen garantía en reparaciones?</h3>
+  <p>Sí, todas nuestras reparaciones cuentan con garantía de 3 meses.</p>
+
+  <h3>¿Cómo hago para solicitar soporte remoto?</h3>
+  <p>Solo debes contactarnos por teléfono o correo y coordinamos una sesión remota.</p>
+
+  <h3>¿Aceptan pagos en efectivo y tarjetas?</h3>
+  <p>Aceptamos ambos métodos de pago para tu comodidad.</p>
+</section>
+
+<section id="testimonios">
+  <h2>Testimonios</h2>
+  <blockquote>
+    "Excelente servicio y atención personalizada. Repararon mi laptop en tiempo récord." - Juan P.
+  </blockquote>
+  <blockquote>
+    "Compré una computadora y funciona perfecto. Muy recomendados." - María S.
+  </blockquote>
+  <blockquote>
+    "Siempre me ayudan con el soporte técnico, super confiables." - Carlos M.
+  </blockquote>
+</section>
+
 <footer>
-  <p>&copy; 2025 TecnoAsistencia</p>
+  <p>© 2025 TecnoAsistencia | contacto@tecnoasistencia.com.py | +595 123 456 789</p>
   <p>
-    <a href="https://facebook.com" style="color:white">Facebook</a> |
-    <a href="https://instagram.com" style="color:white">Instagram</a>
+    Síguenos en
+    <a href="#" aria-label="Facebook">Facebook</a> |
+    <a href="#" aria-label="Twitter">Twitter</a> |
+    <a href="#" aria-label="Instagram">Instagram</a>
   </p>
 </footer>
 
