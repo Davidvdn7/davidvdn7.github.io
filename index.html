@@ -5,75 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TecnoAsistencia - Servicios y Ventas Electrónicas</title>
   <style>
-    /* Fuentes y reset básico */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
 
     * {
-      margin: 0; padding: 0; box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       font-family: 'Roboto', sans-serif;
-      background: #121212; /* fondo oscuro elegante */
+      background: #121212;
       color: #eee;
       line-height: 1.6;
     }
 
-    /* Animación flotante */
     @keyframes float {
       0%, 100% {
         transform: translateY(0);
         text-shadow:
-          0 0 6px #00f,
-          0 0 12px #00f,
-          0 0 18px #0ff,
-          0 0 24px #0ff,
-          0 0 30px #0ff,
-          0 0 36px #0ff;
+          0 0 5px #001f4d,
+          0 0 10px #003366,
+          0 0 15px #004080;
       }
       50% {
         transform: translateY(-8px);
         text-shadow:
-          0 0 10px #00f,
-          0 0 18px #00f,
-          0 0 28px #0ff,
-          0 0 38px #0ff,
-          0 0 48px #0ff,
-          0 0 58px #0ff;
+          0 0 10px #003366,
+          0 0 20px #004080,
+          0 0 30px #0059b3;
       }
     }
 
     header {
-      background: linear-gradient(90deg, #00b4d8, #0077b6);
+      background: linear-gradient(90deg, #001a33, #003366);
       padding: 2rem 1rem;
       text-align: center;
-      color: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
       animation: float 3s ease-in-out infinite;
-      font-family: 'Montserrat', sans-serif;
     }
 
     header h1 {
+      font-family: 'Montserrat', sans-serif;
       font-size: 2.8rem;
-      margin-bottom: 0.2rem;
-      letter-spacing: 2px;
+      color: white;
       text-shadow:
-        0 0 8px #0ff,
-        0 0 15px #0ff,
-        0 0 20px #0ff,
-        0 0 25px #00bcd4;
+        0 0 8px #003366,
+        0 0 15px #004080,
+        0 0 25px #0073e6;
     }
 
     header p {
       font-size: 1.2rem;
-      font-weight: 500;
       opacity: 0.85;
-      text-shadow:
-        0 0 6px #0ff;
+      text-shadow: 0 0 5px #00264d;
     }
 
     nav {
-      background: #023e8a;
+      background: #001f3f;
       display: flex;
       justify-content: center;
       gap: 2rem;
@@ -81,20 +69,15 @@
     }
 
     nav a {
-      color: #90e0ef;
+      color: #66a3ff;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: bold;
       font-size: 1.1rem;
-      padding: 0.4rem 0.6rem;
-      border-radius: 6px;
-      transition: background 0.3s ease, color 0.3s ease;
+      transition: 0.3s ease;
     }
 
-    nav a:hover,
-    nav a:focus {
-      background: #90e0ef;
-      color: #023e8a;
-      outline: none;
+    nav a:hover {
+      color: #ffffff;
     }
 
     section {
@@ -103,20 +86,17 @@
       padding: 2rem 1rem;
       background: #1e1e1e;
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.8);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     }
 
-    /* Subtítulos flotantes azul neón */
     h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: #00ffff;
+      color: #66a3ff;
       text-shadow:
-        0 0 5px #00ffff,
-        0 0 10px #00ffff,
-        0 0 20px #00ffff,
-        0 0 30px #00ffff;
+        0 0 5px #003366,
+        0 0 10px #004080;
       animation: float 3s ease-in-out infinite;
     }
 
@@ -127,200 +107,120 @@
 
     ul li::before {
       content: '✓';
-      color: #90e0ef;
+      color: #66a3ff;
       margin-right: 8px;
     }
 
-    p {
-      margin-top: 1rem;
-      font-size: 1rem;
-    }
-
-    /* Formulario */
     form label {
       display: block;
-      margin-bottom: 0.3rem;
-      font-weight: 600;
+      margin-top: 1rem;
+      font-weight: bold;
     }
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
+    input, textarea {
       width: 100%;
-      padding: 0.7rem;
-      border-radius: 6px;
-      border: none;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
       margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
       font-size: 1rem;
-      font-family: inherit;
-    }
-
-    input[type="text"]:focus,
-    input[type="email"]:focus,
-    textarea:focus {
-      outline: 2px solid #00b4d8;
     }
 
     button {
-      background-color: #00b4d8;
+      background-color: #0059b3;
       color: white;
       border: none;
       padding: 0.8rem 2rem;
-      font-size: 1.1rem;
-      border-radius: 6px;
+      font-size: 1rem;
+      border-radius: 5px;
       cursor: pointer;
-      font-weight: 700;
-      transition: background-color 0.3s ease;
     }
 
-    button:hover,
-    button:focus {
-      background-color: #0077b6;
-      outline: none;
+    button:hover {
+      background-color: #003366;
     }
 
-    /* Footer */
     footer {
-      background: #023e8a;
       text-align: center;
-      color: #90e0ef;
-      padding: 1rem;
-      font-size: 0.9rem;
-      text-shadow:
-        0 0 5px #90e0ef;
+      padding: 1.5rem;
+      background: #001f3f;
+      color: #66a3ff;
+      font-size: 0.95rem;
     }
 
     footer a {
-      color: #90e0ef;
+      color: #66a3ff;
       margin: 0 0.5rem;
       text-decoration: none;
-      font-weight: 600;
     }
 
     footer a:hover {
       text-decoration: underline;
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
       nav {
         flex-direction: column;
-        gap: 1rem;
-      }
-
-      section {
-        margin: 1rem;
-        padding: 1.5rem 1rem;
-      }
-
-      header h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>TecnoAsistencia</h1>
-  <p>Servicios Técnicos y Ventas Electrónicas para tu tecnología</p>
-</header>
+  <header>
+    <h1>TecnoAsistencia</h1>
+    <p>Servicios Técnicos y Ventas Electrónicas</p>
+  </header>
 
-<nav>
-  <a href="#bienvenida">Bienvenida</a>
-  <a href="#servicios">Servicios Técnicos</a>
-  <a href="#ventas">Ventas Informáticas</a>
-  <a href="#contacto">Contacto</a>
-  <a href="#faq">Preguntas Frecuentes</a>
-  <a href="#testimonios">Testimonios</a>
-</nav>
+  <nav>
+    <a href="#bienvenida">Bienvenida</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#ventas">Ventas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-<section id="bienvenida">
-  <h2>Bienvenida</h2>
-  <p>En TecnoAsistencia, te ofrecemos soluciones integrales para tus dispositivos electrónicos, desde reparaciones hasta la venta de productos tecnológicos de alta calidad.</p>
-</section>
+  <section id="bienvenida">
+    <h2>Bienvenida</h2>
+    <p>Ofrecemos soluciones rápidas y garantizadas para todos tus dispositivos tecnológicos. ¡Confía en nosotros!</p>
+  </section>
 
-<section id="servicios">
-  <h2>Servicios Técnicos</h2>
-  <ul>
-    <li>Reparación de computadoras y laptops</li>
-    <li>Soporte técnico remoto y presencial</li>
-    <li>Instalación y actualización de software</li>
-    <li>Mantenimiento preventivo y limpieza de hardware</li>
-  </ul>
-  <p>Contratando nuestros servicios, disfrutarás de atención personalizada, rapidez y garantía de calidad.</p>
-  <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=60" alt="Reparación de computadoras" style="width:100%; border-radius: 8px; margin-top: 1rem;" />
-</section>
+  <section id="servicios">
+    <h2>Servicios Técnicos</h2>
+    <ul>
+      <li>Reparación de laptops y PC</li>
+      <li>Formateo e instalación de programas</li>
+      <li>Limpieza y mantenimiento preventivo</li>
+      <li>Actualización de hardware</li>
+    </ul>
+  </section>
 
-<section id="ventas">
-  <h2>Ventas Informáticas</h2>
-  <article>
-    <h3>Computadora de Escritorio X500</h3>
-    <p>Procesador Intel i7, 16GB RAM, SSD 512GB, tarjeta gráfica NVIDIA GTX 1660.</p>
-    <p><strong>Precio:</strong> $900 USD</p>
-  </article>
-  <article>
-    <h3>Laptop Ultrabook Z3</h3>
-    <p>Procesador AMD Ryzen 7, 16GB RAM, SSD 1TB, pantalla Full HD.</p>
-    <p><strong>Precio:</strong> $1200 USD</p>
-  </article>
-  <article>
-    <h3>Periféricos y Accesorios</h3>
-    <p>Teclados mecánicos, mouse ergonómicos, monitores, y más.</p>
-    <p><strong>Consulta precios y disponibilidad</strong></p>
-  </article>
-  <p>Para comprar, escríbenos en la sección de contacto o visita nuestra tienda física.</p>
-</section>
+  <section id="ventas">
+    <h2>Ventas</h2>
+    <p>Venta de accesorios, laptops, PC de escritorio, monitores, teclados, mouses y más. Precios competitivos y asesoramiento personalizado.</p>
+  </section>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>Teléfono: +595 123 456 789</p>
-  <p>Email: contacto@tecnoasistencia.com.py</p>
-  <p>Dirección: Av. Principal 123, Asunción, Paraguay</p>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-  <form>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required />
-
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email" required />
-
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-
-<section id="faq">
-  <h2>Preguntas Frecuentes</h2>
-  <h3>¿Cuánto tiempo tarda una reparación?</h3>
-  <p>Dependiendo del problema, generalmente entre 24 y 72 horas.</p>
-  <h3>¿Ofrecen garantía en los servicios?</h3>
-  <p>Sí, todos nuestros servicios cuentan con garantía de 3 meses.</p>
-</section>
-
-<section id="testimonios">
-  <h2>Testimonios</h2>
-  <blockquote>
-    <p>"Excelente servicio, rápido y confiable. Recomiendo 100%." - Juan P.</p>
-  </blockquote>
-  <blockquote>
-    <p>"Compré una laptop y el soporte postventa fue impecable." - María G.</p>
-  </blockquote>
-</section>
-
-<footer>
-  <p>© 2025 TecnoAsistencia | contacto@tecnoasistencia.com.py | +595 123 456 789</p>
-  <p>
-    <a href="https://www.facebook.com/Davidverdun777" target="_blank" rel="noopener noreferrer">Facebook</a> |
-    <a href="https://www.instagram.com/davidverdun7/?hl=es-la" target="_blank" rel="noopener noreferrer">Instagram</a>
-  </p>
-</footer>
+  <footer>
+    <p>© 2025 TecnoAsistencia | contacto@tecnoasistencia.com | 📞 +595 123 456 789</p>
+    <p>
+      <a href="https://www.facebook.com/Davidverdun777" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/davidverdun7/?hl=es-la" target="_blank">Instagram</a>
+    </p>
+  </footer>
 
 </body>
 </html>
